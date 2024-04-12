@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    <link rel="stylesheet" href="./src/output.css" rel='stylesheet'>
+</head>
+
+<body class="md:container md:mx-auto">
+    <nav
+        class="md:container md:mx-auto fixed top-0 bg-white md:flex justify-between items-center hidden w-full px-5 py-2 font-semibold">
+        <h1 class="text-nowrap text-3xl font-bold"><a href="#about">Rahmat Fajrial</a></h1>
+        <div class="flex gap-3">
+            <a class="hover:bg-slate-200 py-2 px-3 rounded-xl" href="#about">About</a>
+            <a class="hover:bg-slate-200 py-2 px-3 rounded-xl" href="#experience">Experience</a>
+            <a class="hover:bg-slate-200 py-2 px-3 rounded-xl" href="#projects">Projects</a>
+            <a class="hover:bg-slate-200 py-2 px-3 rounded-xl" href="#contact">Contact</a>
+        </div>
+    </nav>
+    <h1 class="md:hidden text-2xl font-bold fixed top-7 left-4"><a href="#about">Rahmat Fajrial</a></h1>
+    <button id="hamburger"
+        class="md:hidden fixed right-4 top-4 bg-white p-2 rounded-xl cursor-pointer hover:opacity-90">
+        <img id="img1" class="h-9 " src="./assets/hamburger.png" alt="">
+        <img id="img2" class="h-9 hidden" src="./assets/close.png" alt="">
+    </button>
+    <nav id="nav-menu" class="fixed top-24 right-5 hidden md:hidden ">
+        <div id="nav-list" class="gap-2 flex flex-col rounded-xl bg-white py-3 px-1 border-2">
+            <a class="py-2 px-5 hover:bg-slate-200 rounded-lg" href="#about">About</a>
+            <a class="py-2 px-5 hover:bg-slate-200 rounded-lg" href="#experience">Experience</a>
+            <a class="py-2 px-5 hover:bg-slate-200 rounded-lg" href="#projects">Projects</a>
+            <a class="py-2 px-5 hover:bg-slate-200 rounded-lg" href="#contact">Contact</a>
+        </div>
+    </nav>
+    <section id="about" class="min-h-screen  flex justify-center items-center">About</section>
+    <section id="experience" class="min-h-screen  flex justify-center items-center">Experience</section>
+    <section id="projects" class="min-h-screen  flex justify-center items-center">Projects</section>
+    <section id="contact" class="min-h-screen  flex justify-center items-center">Contact</section>
+    <script src="src/script.js"></script>
+</body>
+
+</html>
