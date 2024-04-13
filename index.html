@@ -9,35 +9,164 @@
     <link rel="stylesheet" href="./src/output.css" rel='stylesheet'>
 </head>
 
-<body class="md:container md:mx-auto">
+<body class="md:container md:mx-auto font-poppin bg-black text-white">
     <nav
-        class="md:container md:mx-auto fixed top-0 bg-white md:flex justify-between items-center hidden w-full px-5 py-2 font-semibold">
-        <h1 class="text-nowrap text-3xl font-bold"><a href="#about">Rahmat Fajrial</a></h1>
+        class="md:container md:mx-auto fixed top-0 bg-black md:flex justify-between items-center hidden w-full px-5 py-2 font-semibold">
+        <h1 class="text-nowrap text-3xl font-semibold"><a href="#home">Rahmat Fajrial</a></h1>
         <div class="flex gap-3">
-            <a class="hover:bg-slate-200 py-2 px-3 rounded-xl" href="#about">About</a>
-            <a class="hover:bg-slate-200 py-2 px-3 rounded-xl" href="#experience">Experience</a>
-            <a class="hover:bg-slate-200 py-2 px-3 rounded-xl" href="#projects">Projects</a>
-            <a class="hover:bg-slate-200 py-2 px-3 rounded-xl" href="#contact">Contact</a>
+            <!-- <a class="hover:bg-white hover:text-black py-2 px-3 rounded-xl transition-all" href="#home">Home</a> -->
+            <a class="hover:bg-white hover:text-black py-2 px-3 rounded-xl transition-all" href="#skill">Skill</a>
+            <a class="hover:bg-white hover:text-black py-2 px-3 rounded-xl transition-all" href="#projects">Projects</a>
+            <a class="hover:bg-white hover:text-black py-2 px-3 rounded-xl transition-all" href="#contact">Contact</a>
         </div>
     </nav>
-    <h1 class="md:hidden text-2xl font-bold fixed top-7 left-4"><a href="#about">Rahmat Fajrial</a></h1>
+    <!-- <h1 class="md:hidden text-2xl font-bold fixed top-6 left-4 bg-black p-2 rounded-xl opacity-90">
+        <a href="#home">RahmatFajrial</a>
+    </h1> -->
     <button id="hamburger"
-        class="md:hidden fixed right-4 top-4 bg-white p-2 rounded-xl cursor-pointer hover:opacity-90">
+        class="md:hidden fixed right-4 top-4 bg-white p-2 rounded-xl cursor-pointer hover:border border hover:border-white border-black transition-all opacity-80">
         <img id="img1" class="h-9 " src="./assets/hamburger.png" alt="">
         <img id="img2" class="h-9 hidden" src="./assets/close.png" alt="">
     </button>
     <nav id="nav-menu" class="fixed top-24 right-5 hidden md:hidden ">
-        <div id="nav-list" class="gap-2 flex flex-col rounded-xl bg-white py-3 px-1 border-2">
-            <a class="py-2 px-5 hover:bg-slate-200 rounded-lg" href="#about">About</a>
-            <a class="py-2 px-5 hover:bg-slate-200 rounded-lg" href="#experience">Experience</a>
-            <a class="py-2 px-5 hover:bg-slate-200 rounded-lg" href="#projects">Projects</a>
-            <a class="py-2 px-5 hover:bg-slate-200 rounded-lg" href="#contact">Contact</a>
+        <div id="nav-list" class="gap-2 flex flex-col rounded-xl bg-white text-black py-3 px-1 border-2">
+            <!-- <a class="py-2 px-5 hover:bg-slate-300 rounded-lg" href="#home">Home</a> -->
+            <a class="py-2 px-5 hover:bg-slate-300 rounded-lg" href="#skill">Skill</a>
+            <a class="py-2 px-5 hover:bg-slate-300 rounded-lg" href="#projects">Projects</a>
+            <a class="py-2 px-5 hover:bg-slate-300 rounded-lg" href="#contact">Contact</a>
         </div>
     </nav>
-    <section id="about" class="min-h-screen  flex justify-center items-center">About</section>
-    <section id="experience" class="min-h-screen  flex justify-center items-center">Experience</section>
-    <section id="projects" class="min-h-screen  flex justify-center items-center">Projects</section>
-    <section id="contact" class="min-h-screen  flex justify-center items-center">Contact</section>
+    <section id="home" class="min-h-screen flex justify-center items-center">
+        <div class="md:flex md:flex-row md:gap-5  flex flex-col gap-5 lg:gap-14 items-center justify-center">
+            <img class="md:h-96 border-2 rounded-3xl " src="./assets/profile.png" alt="">
+            <div class="w-full space-y-3 text-center">
+                <p class="text-2xl opacity-80">Hello, I'm</p>
+                <h1 class="text-5xl text-nowrap">Rahmat Fajrial</h1>
+                <h1 class="text-2xl opacity-80">Web Developer </h1>
+                <div class="space-x-5">
+                    <button
+                        class="border p-3 rounded-2xl border-white transition-all hover:opacity-75 ">DownloadCV</button>
+                    <a class="border p-3 rounded-2xl border-white transition-all hover:opacity-75" href="#contact">
+                        Contack Info</a>
+                </div>
+                <div class="text-wrap w-[350px] opacity-80">
+                    <p>Graduated with a Computer Science degree from Universitas Putra Indonesia "YPTK" Padang</p>
+                    <p>I am a Web Developer who is passionate about learning the technology and solve problems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skill" class="min-h-screen  flex justify-center items-center flex-col">
+        <div class="space-y-10">
+            <h1 class="text-3xl text-center">My skill</h1>
+            <div class="md:flex md:flex-row flex flex-col gap-12 text-xl px-12">
+                <div class="border border-white p-8 rounded-3xl md:w-[350px]">
+                    <div class="space-y-5  md:space-y-10">
+                        <h1 class="text-center">Front End</h1>
+                        <div class="grid grid-cols-2 gap-5 font-semibold">
+                            <div class="flex flex-col items-center">
+                                <img class="h-12" src="./assets/skill/html.png" alt="">
+                                <p>HTML</p>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <img class="h-12" src="./assets/skill/css.png" alt="">
+                                <p>CSS</p>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <img class="h-12" src="./assets/skill/js.png" alt="">
+                                <p>Javascript</p>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <img class="h-12" src="./assets/skill/tailwind.svg" alt="">
+                                <p>Tailwind CSS</p>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <img class="h-12" src="./assets/skill/react.png" alt="">
+                                <p>React Js</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-white p-8 rounded-3xl md:space-y-10 md:w-[350px]">
+                    <div class="space-y-5 ">
+                        <h1 class="text-center">Back End</h1>
+                        <div class="grid grid-cols-2 gap-5 font-semibold">
+                            <div class="flex flex-col items-center">
+                                <img class="h-16" src="./assets/skill/nodejs.svg" alt="">
+                                <p>Node Js</p>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <img class="h-16 bg-white px-5" src="./assets/skill/express.png" alt="">
+                                <p>Express Js</p>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <img class="h-12" src="./assets/skill/mysql.svg" alt="">
+                                <p>MySql</p>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <img class="h-12" src="./assets/skill/mongodb.svg" alt="">
+                                <p>Mongo Db</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="min-h-screen  flex justify-center items-center text-2xl py-20">
+        <div class="space-y-5 text-center mt-5">
+            <h1 class="text-3xl">MY Projects</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 lg:grid-cols-3 px-12">
+                <div class="border h-full border-white rounded-2xl space-y-5 pb-5 flex flex-col justify-between">
+                    <!-- <div class="h-94  flex justify-center items-center rounded-t-xl"> -->
+                    <img class="object-cover rounded-t-xl" src="./assets/ecommerce.png" alt="">
+                    <!-- </div> -->
+                    <h1 class="text-center">eCommerce Multi Vendors </h1>
+                    <div class="py-2 px-5 w-full flex gap-5 text-sm">
+                        <button class="w-full border p-2 rounded-2xl border-white transition-all hover:bg-slate-200 ">
+                            GitHub</button>
+                        <button class="w-full border p-2 rounded-2xl border-white transition-all hover:bg-slate-200">
+                            Demo</button>
+                    </div>
+                </div>
+                <div class="border border-white rounded-2xl space-y-5 pb-5 flex flex-col justify-between">
+                    <img class="rounded-t-2xl" src="./assets/blog.png" alt="">
+                    <h1 class="text-center">Blog Post</h1>
+                    <div class="py-2 px-5 w-full flex gap-5 text-sm">
+                        <button class="w-full border p-2 rounded-2xl border-white transition-all hover:bg-slate-200 ">
+                            GitHub</button>
+                        <button class="w-full border p-2 rounded-2xl border-white transition-all hover:bg-slate-200">
+                            Demo</button>
+                    </div>
+                </div>
+                <div class="border border-white rounded-2xl space-y-5 pb-5 flex flex-col justify-between">
+                    <img class="rounded-t-2xl" src="./assets/portofolio.png" alt="">
+                    <h1 class="text-center">Portofolio</h1>
+                    <div class="py-2 px-5 w-full flex gap-5 text-sm">
+                        <button class="w-full border p-2 rounded-2xl border-white transition-all hover:bg-slate-200 ">
+                            GitHub</button>
+                        <button class="w-full border p-2 rounded-2xl border-white transition-all hover:bg-slate-200">
+                            Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="min-h-screen flex justify-center items-center">
+        <div class="space-y-5 ">
+            <h1 class="text-center text-3xl">Contact Me </h1>
+            <div class="md:flex md:flex-row flex flex-col p-5 rounded-xl gap-5">
+                <div class="border rounded-xl p-5 flex flex-col">
+                    <img class="h-20" src="./assets/gmail.svg" alt="">
+                    <h1 class="text-2xl">rahmatfajrial0507.@gmail.com</h1>
+                </div>
+                <div class="border rounded-xl p-5 flex flex-col items-center">
+                    <img class="h-20" src="./assets/linkedin.svg" alt="">
+                    <h1 class="text-2xl text-nowrap">rahmat fajrial</h1>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="src/script.js"></script>
 </body>
 
